@@ -1,0 +1,12 @@
+.boton{
+    background-color: var(--color1);
+    color: var(--back-color2);
+    text-decoration: none;
+    border: none;
+    font-weight: bold;
+  
+    display: inline-block;
+    justify-self: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }

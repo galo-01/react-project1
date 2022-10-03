@@ -1,3 +1,11 @@
+:root{
+  --back-color1: #282c34;
+  --back-color2: #181a1f;
+  --color1:#61dafb;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -14,7 +22,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--back-color1);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +33,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--color1);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +43,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*-------------------------[.navbar]----*/
+
+
+.navbar{
+  color:  white;
+  background-color: var(--back-color2);
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 2fr 1fr 2fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-name{
+  margin-left: 0.5rem;
+}
+
+.nav-links{
+  font-weight: bold;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  list-style: none;
+}
+
+.nav-link{
+  color: rgb(235, 235, 235);
+  margin: 0 1rem;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.nav-left{
+  display: flex;
+  justify-content: center;
+
+}
+
+.cart{
+  margin-right: 3rem;
+}
+
+.boton{
+  background-color: var(--color1);
+  color: var(--back-color2);
+  text-decoration: none;
+  font-weight: bold;
+
+  display: inline-block;
+  justify-self: center;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
