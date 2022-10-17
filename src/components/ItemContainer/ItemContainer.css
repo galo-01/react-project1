@@ -1,0 +1,9 @@
+:root{
+    --back-color1: #282c34;
+    --back-color2: #181a1f;
+    --color1:#61dafb;
+}
+
+.itemContainer{
+    background-color: var(--back-color1);
+}

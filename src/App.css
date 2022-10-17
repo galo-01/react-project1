@@ -4,7 +4,9 @@
   --color1:#61dafb;
 }
 
-
+html{
+  background-color: var(--back-color1);
+}
 
 .App {
   text-align: center;
@@ -22,7 +24,6 @@
 }
 
 .App-header {
-  background-color: var(--back-color1);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

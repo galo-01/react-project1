@@ -1,0 +1,47 @@
+:root{
+    --back-color1: #282c34;
+    --back-color2: #181a1f;
+    --color1:#61dafb;
+}
+
+.counter{
+    display: grid;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+
+    column-gap: 3px;
+    row-gap: 3px;
+
+    margin: 1rem auto 3rem auto;
+    width: 7rem;
+}
+
+.count-minus{
+    grid-column: 1/2;
+}
+.count-plus{
+    grid-column: 3/4;
+}
+.count-spam{   
+    color: #181a1f;
+    background-color: white;
+    grid-column: 2/3;
+}
+
+.counter-button{
+    grid-column: 1/4;
+
+}
+
+.button{
+    background-color: var(--color1);
+    color: var(--back-color1);
+    font: inherit;
+    text-decoration: none;
+    font-weight: bold;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 1px;
+    padding: 0;
+}

@@ -1,0 +1,47 @@
+:root{
+    --back-color1: #282c34;
+    --back-color2: #181a1f;
+    --color1:#61dafb;
+}
+
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    
+    margin: 4rem auto;
+    width: 80%;
+    grid-gap: 1rem;
+
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.card-left{
+    border: #181a1f solid 10px;
+    border-radius: 0.5rem;
+}
+
+.card-right{
+    border: #181a1f solid 10px;
+    border-radius: 0.5rem;
+}
+
+
+.left-img{
+    width: 12rem;
+    margin-top: 1.5rem;
+}
+
+.right-tittle{
+    background-color: #181a1f;
+    padding-bottom: 1rem;
+    margin: 0 0 4rem 0;
+}
+
+.right-detail{
+    margin: auto;
+    max-width: 30rem;
+}

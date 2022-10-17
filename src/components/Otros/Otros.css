@@ -1,0 +1,21 @@
+:root{
+    --back-color1: #282c34;
+    --back-color2: #181a1f;
+    --color1:#61dafb;
+}
+
+
+.clicker{
+    cursor: pointer;
+    background: none;
+    border: none;
+    font: inherit;
+
+
+    font-weight: bold;
+    color: var(--back-color1);
+    background-color: var(--color1);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 2rem;
+}
