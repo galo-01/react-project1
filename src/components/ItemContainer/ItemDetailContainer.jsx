@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 
 import imgSphalerite from'../imgs/Icon_Sphalerite.png';
@@ -11,7 +12,7 @@ function getItem(){
         }
         setTimeout(()=>{
             resolve(item);
-        },2000)
+        },500)
     })
     return myPromise;
 }
@@ -29,9 +30,18 @@ function ItemDetailContainer(props) {
     },[]);
     
 
+    const { id }= useParams(); // lee el parametro "id" de la ruta
+    const [stateId, setStateId] = useState();
+
+    useEffect(()=>{
+        console.log(id)
+        setStateId(id) // pone ese valor en un estado
+    }, [id]); // se fija cada vez que "id" cambia
+
 
     return (
         <div>
+            <h1>Detalle de {stateId}</h1>
             <ItemDetail item={item}/>
         </div>
     );

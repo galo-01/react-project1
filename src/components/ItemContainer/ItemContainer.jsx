@@ -24,7 +24,7 @@ function getProducts(){
         ];
         setTimeout( ()=>{
             resolve(itemList);
-        }, 3000);
+        }, 500);
     });
     return myPromise;
 };
